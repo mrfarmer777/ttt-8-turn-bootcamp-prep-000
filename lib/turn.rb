@@ -21,3 +21,13 @@ end
 def input_to_index(inp)
   ind = inp.to_i-1
 end
+
+def move(board,ind,char)
+  board[ind]=char
+end
+
+def turn(board)
+  puts "Please enter 1-9:"
+  uind = gets.strip
+  if valid_move(input_to_index(uind))
+  
