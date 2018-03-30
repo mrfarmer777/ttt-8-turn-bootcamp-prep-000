@@ -7,11 +7,11 @@ def display_board(board)
 end
 
 def position_taken?(board,ind)
-  (board[ind]==" " || board[ind]=="")
+  !(board[ind]==" " || board[ind]=="")
 end
 
 def valid_move?(board,ind)
-  if(ind.between?(0,8) && position_taken?(board,ind))
+  if(ind.between?(0,8) && !position_taken?(board,ind))
     true
   else
     false
