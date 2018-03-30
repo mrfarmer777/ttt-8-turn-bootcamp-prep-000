@@ -19,5 +19,5 @@ def valid_move?(board,ind)
 end
 
 def input_to_index(inp)
-  ind = inp.to_i
+  ind = inp.to_i-1
 end
