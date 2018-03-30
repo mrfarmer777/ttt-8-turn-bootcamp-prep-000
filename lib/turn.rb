@@ -21,5 +21,3 @@ end
 def input_to_index(inp)
   ind = inp.to_i
 end
-
-
